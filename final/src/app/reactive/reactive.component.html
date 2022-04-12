@@ -1,0 +1,12 @@
+<p>reactive works!</p>
+<div class="col-md-4 offset md-4">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <label for="email" class="form-label" >email</label>
+    <input type="email" class="form-control" formControlName="email"
+    [ngClass]="{'errorClass': f.email.errors && f.email.invalid}">
+    <span class="text-danger" *ngIf=f.email.touched && f.email.invalid> This field is mandatory</span>
+    <button type="submit" [disabled]="loginForm.invalid" class="btn btn-primary">submit</button>
+</form>
+</div>
+
+

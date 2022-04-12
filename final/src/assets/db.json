@@ -1,0 +1,16 @@
+{
+  "details": [
+    {
+      "id": 1,
+      "name": "bharat",
+      "price": 20000000,
+      "brand": "national"
+    },
+    {
+      "name": "vjsch",
+      "price": "12321",
+      "brand": "dcsd",
+      "id": 2
+    }
+  ]
+}

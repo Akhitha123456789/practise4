@@ -1,0 +1,23 @@
+<p>http works!</p>
+<table>
+    <tr>
+        <th>name</th>
+        <th>price</th>
+        <th>brand</th>
+        <th>id</th>
+    </tr>
+    <tr *ngFor="let emp of details">
+        <td>{{emp.name}}</td>
+        <td>{{emp.price}}</td>
+        <td>{{emp.brand}}</td>
+        <td>{{emp.id}}</td>
+
+    </tr>
+</table>
+<input type="text" placeholder="enter id" [(ngModel)] ="id"> 
+ <input type="text" placeholder="enter name" [(ngModel)] ="name"> 
+<input type="text"  placeholder="enter price" [(ngModel)] ="price">
+<input type="text"  placeholder="enter brand" [(ngModel)] ="brand">
+<button type="submit" (click)="adddetails()">add</button>
+<button type="submit" (click)="updatedetails()">update</button>
+<button type="submit" (click)="deletedetails()">delete</button>
